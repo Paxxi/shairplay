@@ -70,6 +70,12 @@ target_include_directories(
   $<INSTALL_INTERFACE:include/shairplay>
 )
 
+target_compile_definitions(shairplay
+  PRIVATE
+  _CRT_SECURE_NO_WARNINGS
+  _CRT_NONSTDC_NO_DEPRECATE
+)
+
 target_link_libraries(shairplay PRIVATE ws2_32.lib winmm.lib)
 
 include(CMakePackageConfigHelpers)
