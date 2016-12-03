@@ -74,6 +74,7 @@ target_compile_definitions(shairplay
   PRIVATE
   _CRT_SECURE_NO_WARNINGS
   _CRT_NONSTDC_NO_DEPRECATE
+  DLL_EXPORT
 )
 
 target_link_libraries(shairplay PRIVATE ws2_32.lib winmm.lib)
